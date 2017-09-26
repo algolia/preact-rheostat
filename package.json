@@ -5,13 +5,13 @@
   "main": "lib/Slider.js",
   "jsnext:main": "src/Slider.jsx",
   "scripts": {
-    "build": "npm run clean && babel src -d lib",
+    "build": "npm run clean && NODE_ENV=production  babel src -d lib",
     "clean": "rimraf lib",
     "prepublish": "npm run build",
     "lint": "eslint --ext .js,.jsx src test stories",
     "storybook": "start-storybook -p 9001",
     "pretest": "npm run build && npm run lint",
-    "test": "nyc npm run test:all",
+    "test": "NODE_ENV=test nyc npm run test:all",
     "tests-only": "npm run build && npm run test:all",
     "test:all": "npm run test:node && npm run test:dom",
     "test:node": "npm run test:mocha",
@@ -33,6 +33,7 @@
     "@kadira/storybook": "^2.35.3",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
+    "babel-plugin-module-resolver": "^2.7.1",
     "babel-plugin-transform-replace-object-assign": "^0.2.1",
     "babel-preset-airbnb": "^2.4.0",
     "babel-register": "^6.26.0",
@@ -64,6 +65,8 @@
   },
   "dependencies": {
     "object.assign": "^4.0.4",
+    "preact": "^8.2.5",
+    "preact-compat": "^3.17.0",
     "prop-types": "^15.5.10"
   }
 }
