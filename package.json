@@ -1,9 +1,8 @@
 {
-  "name": "rheostat",
+  "name": "preact-rheostat",
   "version": "2.1.1",
-  "description": "Rheostat is a www, mobile, and accessible slider component built with React",
+  "description": "Rheostat with Preact as React replacement",
   "main": "lib/Slider.js",
-  "jsnext:main": "src/Slider.jsx",
   "scripts": {
     "build": "npm run clean && NODE_ENV=production  babel src -d lib",
     "clean": "rimraf lib",
@@ -59,9 +58,6 @@
     "rimraf": "^2.6.1",
     "sinon": "^3.2.1",
     "style-loader": "^0.17.0"
-  },
-  "peerDependencies": {
-    "react": ">=0.13.x"
   },
   "dependencies": {
     "object.assign": "^4.0.4",
