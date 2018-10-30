@@ -64,5 +64,9 @@
   "dependencies": {
     "object.assign": "^4.0.4",
     "prop-types": "^15.5.10"
+  },
+  "peerDependencies": {
+    "preact": ">= 8.5.0",
+    "preact-compat": ">= 3.17.0"
   }
 }
