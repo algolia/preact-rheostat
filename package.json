@@ -50,6 +50,8 @@
     "jsdom": "^9.12.0",
     "mocha": "^3.5.0",
     "nyc": "^11.1.0",
+    "preact": "^8.2.5",
+    "preact-compat": "^3.17.0",
     "raw-loader": "^0.5.1",
     "react": "^15.6.1",
     "react-addons-test-utils": "^15.6.0",
@@ -61,8 +63,6 @@
   },
   "dependencies": {
     "object.assign": "^4.0.4",
-    "preact": "^8.2.5",
-    "preact-compat": "^3.17.0",
     "prop-types": "^15.5.10"
   }
 }
